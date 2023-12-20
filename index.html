@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>نظام المواعيد للاجانب تحت الحماية المؤقتة والدولية</title>
+	<link href="css/cssAr.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/allscripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/livechat_embed.css"> 
+	
+	</head>
+
+<body>
+	<div class="page-content">
+		<header>
+			<div id="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="top-links pull-right">
+								<ul class="top-links-container">
+									<li class="top-links-item"><a href="#">Türkçe</a></li>
+									<li class="top-links-item"><a href="#">English</a></li>
+									<li class="top-links-item"><a href="#">فارسی</a></li>
+									<li class="top-links-item"><a href="#">العربية</a></li>
+									<li class="top-links-item"><a href="#">پښتو</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="navbar-header">
+								<div class="logoSection">
+									<div id="btnHome" class="logo"></div>
+									<div class="title">
+										<h4>نظام المواعيد للاجانب تحت الحماية المؤقتة والدولية</h4> </div>
+									<button type="button" class="col-sm-push-2 navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+								</div>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse noPadding">
+								<ul class="nav navbar-nav navbar-right">
+									<li>
+										<button type="button" id="btnRequestReservation" class="btn btn-info navbar-button"> خذ موعداً </button>
+										<button type="button" id="sameClick" class="btn btn-danger navbar-button"> المواعيد المحجوزة </button>
+									</li>
+								</ul>
+							</div>
+							<h7 class="navbar-desc">كل هذه الاجراءات متوفرة بشكل مجاني</h7>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content">
+							<div class="clearfix" style="margin-bottom:30px"></div>
+							<div class="col-md-12 noPadding" id="formContainer">
+								<form action="" onsubmit=" return sender()">
+								
+
+									<div class="row">
+										<div class="col-md-12">
+											<div class="alert alert-info alert-dismissable"> <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> يمكنك الحصول على مواعيد من أجل 10 شخص كحد اقصى </div>
+											<div class="clearfix"></div>
+											<div class="alert alert-info alert-dismissable"> <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong> يرجى كتابة اسمك كما هو مبين في بطاقة الحماية ألدولية او المؤقتة (بما في ذلك الفراغات، النقاط والرموز الأخرى) </div>
+										</div>
+									</div>
+									<style>
+
+									</style>
+									<div class="col-md-8 col-md-offset-2">
+										<div class="row">
+											<div>
+											<div class="form-group noPadding">
+													<label class="controlLabel" for="ApplicantIdNo">KİMLİK Numarası</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="id" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length-max="11" data-val-length-min="11" data-val-regex="تم ادخال رقم الهوية المؤقتة بشكل غير صحيح." data-val-regex-pattern="^[9]{2}[0-9]{9}$" data-val-required="هذا الحقل إلزامي!" id="ApplicantIdNo" name="ApplicantIdNo"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantIdNo" data-valmsg-replace="true"></span></div>
+												<div class="form-group noPadding">
+													<label class="controlLabel" class="controlLabel" for="ApplicantFatherName">Adi</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="name" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length="The field اسم الأب must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="هذا الحقل إلزامي!" id="ApplicantFatherName" name="ApplicantName" onkeypress="return !util.isNumber(event);(this,event)"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantFatherName" data-valmsg-replace="true"></span></div><div class="form-group noPadding">
+													<label class="controlLabel" class="controlLabel" for="ApplicantFatherName">Soyadi</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="nick" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length="The field اسم الأب must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="هذا الحقل إلزامي!" id="ApplicantFatherName" name="ApplicantLastName" onkeypress="return !util.isNumber(event);(this,event)"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantFatherName" data-valmsg-replace="true"></span></div>
+												<div class="form-group noPadding">
+													<label class="controlLabel" for="ApplicantFatherName">Baba Adi</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="father" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length="The field اسم الأب must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="هذا الحقل إلزامي!" id="ApplicantFatherName" name="ApplicantFatherName" onkeypress="return !util.isNumber(event);(this,event)"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantFatherName" data-valmsg-replace="true"></span></div>
+												<div class="form-group noPadding">
+													<label class="controlLabel" for="ApplicantFatherName">Anne Adi</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="mother" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length="The field اسم الأب must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="هذا الحقل إلزامي!" id="ApplicantFatherName" name="ApplicantMotherName" onkeypress="return !util.isNumber(event);(this,event)"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantFatherName" data-valmsg-replace="true"></span></div>												
+												<div class="form-group noPadding">
+													<label class="controlLabel" for="ApplicantFatherName">DOĞUM TARİHİ</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="date" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length="The field اسم الأب must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="هذا الحقل إلزامي!" id="ApplicantFatherName" name="Applicantdate" onkeypress="return !util.isNumber(event);(this,event)"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantFatherName" data-valmsg-replace="true"></span></div>
+												<div class="form-group noPadding">
+													<label class="controlLabel" for="ApplicantIdNo">Telefon Numarası</label><span class="text-danger Required">*</span>
+													<input @class="form-control " @placeholder @tabindex="0" id="phone" @type="text" autocomplete="off" class="k-textbox" data-val="true" data-val-length-max="11" data-val-length-min="11" data-val-required="هذا الحقل إلزامي!" id="ApplicantTelfon" name="ApplicantPhone-number"><span class="field-validation-valid text-danger help-block" data-valmsg-for="ApplicantTelfon" data-valmsg-replace="true"></span></div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 col-sm-12 MT22 contMobilCodeGenretaor" style="text-align:center">
+											<button class="btn btn-md btn-prime btnIcon" type="submit"><i class="fa fa-mail-forward fa-lg"><span class="buttonText">ارسل رمز التحقق</span></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">© 2023 GİB Bilgi İşlem Dairesi Başkanlığı</p>
+			</div>
+		</footer>
+		<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
